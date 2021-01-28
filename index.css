@@ -1,0 +1,39 @@
+/* accordion */
+.acc-btn { 
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 15px 10px;
+    background-image: linear-gradient(to right, #eaeaea , transparent);
+    border: unset;
+}
+
+.acc-btn.visible {
+    background-image: linear-gradient(to right, #FFC400, transparent);
+    border: unset;
+}
+
+.acc-content { 
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.acc-content span {
+    padding: 10px 0;
+    color: #adadad;
+}
+
+@media (max-width:768px) {
+    .margin-small {
+        margin-top: 20px;
+    }
+
+    .acc-btn, .acc-content, #vertical-nav .nav-link {
+        font-size: 14px;
+    }
+}
